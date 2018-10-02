@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/list.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+        <div class="row" id="header">
+            <div class="col-md-6" id="logo">
+                <h1 class="title"><i>Magic: The Gathering</i> — Collection Tracker</h1>
+            </div>
+            <div class="col-md-6">
+                <div id="nav">
+                    <a href="index.html" class="leftmost">Collection</a>
+                    <a href="card-search.html">Card Search</a>
+                    <a href="store-search.html">Store Search</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" class="both">
+            <div class="col-md-6" id="login"></div>
+            <div class="col-md-6" id="create-account"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2" id="user-meta">
+                <div class="row user-stuff" id="user-info"></div>
+                <div class="row user-stuff" id="create-deck"></div>
+            </div>
+            <br>
+            <div class="col-md-9 user-stuff " id="collection"></div>
+        </div> 
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row user-stuff" id="table-title"></div>
+                <br>
+                <div class="row user-stuff" id="dashboard"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 user-stuff" id="list"></div>
+        </div>
+    </div>
+    
+    <div id="invalid-username" class="modal">
+        <div class="modal-content">
+          <span class="close user-close">&times;</span>
+          <p class="text-center">Invalid Username</p>
+        </div>
+    </div>
+
+    <div id="invalid-password" class="modal">
+        <div class="modal-content">
+          <span class="close password-close">&times;</span>
+          <p class="text-center">Invalid Password</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/list.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+body {
+    background-image: url(../images/MTG_4.jpg);
+    font-family: 'IM Fell French Canon SC', serif; 
+}
+
+.container {
+    float: center;  
+    font-size: 20px;
+    color: aliceblue;
+}
+
+/*Header*/
+
+#header {
+    background-color: #331B0D;
+}
+
+.title { 
+    float: right;
+    color: teal;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav {
+    float: left;
+    margin-top: 25px;
+}
+
+#nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    color: teal;
+    text-decoration: none;
+    border-left: 1px solid black;
+}
+
+#nav a:first-child {
+    border-left: 0 none;
+}
+
+#nav a:hover {
+    color: yellow;
+}
+
+/*Search Form*/
+
+#searchForm {
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder; 
+    border: 2px solid black;
+    color: teal;
+    background: rgb(51, 27, 13, 0.9); 
+}
+
+#searchBtn, #loginBtn {
+    background-color: teal;
+    border-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+#searchBtn:hover, #loginBtn:hover {
+    cursor: pointer;    
+    background-color: darkred;
+    border: 1px solid black;
+}
+
+
+
+.card {
+    display: inline;
+    margin: 5px;
+    
+}
+#listId {
+   
+    margin-top: 20px;
+    
+}
+#list {
+    border: 1px;
+    flex-flow: wrap;
+    overflow: auto;
+    
+    
+}
+
+#oneCard img {
+    float: right;
+    margin-right: 80px;
+}
+
+#info {
+   
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+}
+
+/*Add to Collection or Deck*/
+#num-input {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+#deck-select {
+    height: 50px;
+    margin: 5px;
+}
+
+#add-to-deck {
+    margin: 5px;
+    background-color: darkred;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#add-to-collection {
+    margin: 5px;
+    background-color: darkred;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+#add-to-deck:hover, #add-to-collection:hover {
+    cursor: pointer;    
+    background-color: teal;
+    border-color: #331B0D;
+}
+
+/*Login Modal Style*/
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 330px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
